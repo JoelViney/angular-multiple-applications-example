@@ -3,32 +3,32 @@ import { RouterModule } from '@angular/router';
 
 import { SettingsFactory } from './settings-factory';
 
-import { WelcomeComponent } from './welcome.component';
+import { SettingsExampleComponent } from './settings-example.component';
 
-import { ComponentPageComponent } from './component-page.component';
+import { DynamicComponentExampleComponent } from './dynamic-component-example.component';
 
 import { ComponentFactoryDirective } from './component-factory-directive';
 
-import { RouteDataCommonPageComponent } from './routed-data-common-page.component';
+import { RouteDataExampleComponent } from './routed-data-example.component';
 
 @NgModule({
   imports: [
     RouterModule,
 
     RouterModule.forChild([
-      { path: 'component', component: ComponentPageComponent },
+      { path: 'settings-component', component: SettingsExampleComponent },
+      { path: 'dynamic-component', component: DynamicComponentExampleComponent },
     ])
   ],
   declarations: [
-    WelcomeComponent,
-    ComponentPageComponent,
+    SettingsExampleComponent,
+    RouteDataExampleComponent,
+    DynamicComponentExampleComponent,
     ComponentFactoryDirective,
-    RouteDataCommonPageComponent,
   ],
   exports: [
-    WelcomeComponent,
+    RouteDataExampleComponent,
     ComponentFactoryDirective,
-    RouteDataCommonPageComponent,
   ],
   providers: [
     SettingsFactory,

@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar.component';
 
 import { HomeComponent } from './home.component';
 
-import { RouteDataCommonPageComponent } from '../../global/routed-data-common-page.component';
+import { RouteDataExampleComponent } from '../../global/routed-data-example.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { RouteDataCommonPageComponent } from '../../global/routed-data-common-pa
     RouterModule.forRoot(
       [
         { path: '', component: HomeComponent },
-        { path: 'routed-data', component: RouteDataCommonPageComponent, data: { projectName: 'Application A' } }
+        { path: 'routed-data', component: RouteDataExampleComponent, data: { projectName: 'Application A' } }
       ],
       {
         enableTracing: true,

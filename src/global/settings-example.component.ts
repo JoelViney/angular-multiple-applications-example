@@ -3,10 +3,9 @@ import { Component } from '@angular/core';
 import { SettingsFactory } from './settings-factory';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html'
+  templateUrl: './settings-example.component.html'
 })
-export class WelcomeComponent {
+export class SettingsExampleComponent {
 
   title: string;
 

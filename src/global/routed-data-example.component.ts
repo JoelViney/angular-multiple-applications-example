@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  templateUrl: './route-data-common-page.component.html'
+  templateUrl: './route-data-example.component.html'
 })
-export class RouteDataCommonPageComponent implements OnInit {
+export class RouteDataExampleComponent implements OnInit {
 
   public projectName: string;
 
