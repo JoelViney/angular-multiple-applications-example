@@ -27,12 +27,12 @@ Chances are your going to need to set values in the environment variables and th
 So to get around this we wrap the environments in a settings component with a shared i-settings interface and dynamically load them with the settings-factory.
 
 See:
-[/global/settings-factory.ts](../../global/settings-factory.ts)
-[/global/i-settings.ts](../../global/i-settings.ts)
-[/application-a/app/settings.ts](../../application-a/app/settings.ts)
-[/application-b/app/settings.ts](../../application-b/app/settings.ts)
-[/global/settings.component.html](../../global/settings.component.html)
-[/global/settings.component.ts](../../global/settings.component.ts)
+/src/global/settings-factory.ts
+/src/global/i-settings.ts
+/src/application-a/app/settings.ts
+/src/application-b/app/settings.ts
+/src/global/settings.component.html
+/src/global/settings.component.ts
 
 
 #### 2. Using Routed Data to Identify the calling Application...
@@ -42,9 +42,9 @@ Sometimes a global component will need to know which project loaded it.
 A simple approach to this is to define the router path in each application and then pass through information with ActivatedRoute's data.
 
 See:
-[/global/routed-data-common-page.component.ts](../../global/routed-data-common-page.component.ts)
-[/application-a/app/app.module.ts](../../application-a/app/app.module.ts)
-[/application-b/app/app.module.ts](../../application-b/app/app.module.ts)
+/src/global/routed-data-common-page.component.ts
+/src/application-a/app/app.module.ts
+/src/application-b/app/app.module.ts
 
 #### 2. Global Components Dynamically Loading Application Components...
 
@@ -52,6 +52,6 @@ In order for global components to load a component from the application we use t
 This means that we can pass through components like the navbar to shared pages that live in the global section of the application.
 
 See:
-[/global/component-factory-directive.ts](../../global/component-factory-directive.ts)
-[/global/routed-data-common-page.component.html](../../global/routed-data-common-page.component.html)
-[/global/routed-data-common-page.component.ts](../../global/routed-data-common-page.component.ts)
+/src/global/component-factory-directive.ts
+/src/global/routed-data-common-page.component.html
+/src/global/routed-data-common-page.component.ts
