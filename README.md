@@ -1,14 +1,14 @@
 
 # Angular 5 Multi Applications Example
 
-This project was created to demonstrate how to create multiple applications within one Angular 5 project. It also shows how to share stuff between multiple applications.
+This project was created to demonstrate how to create multiple applications within one Angular 6 project. It also shows how to share stuff between multiple applications.
 
 ### How to Run the Applications
 To run the project use the following command:
-> ng serve --app 0 --port 4200
+> ng serve application-a --port 4200
 
 And in another terminal window enter the following command:
-> ng serve --app 1 --port 4400
+> ng serve application-b --port 4400
 
 Then navigate to: http://localhost:4200/ and http://localhost:4400/
 
