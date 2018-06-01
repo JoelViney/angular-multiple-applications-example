@@ -1,5 +1,5 @@
 
-# Angular 5 Multi Applications Example
+# Angular 6 Multi Applications Example
 
 This project was created to demonstrate how to create multiple applications within one Angular 6 project. It also shows how to share stuff between multiple applications.
 
